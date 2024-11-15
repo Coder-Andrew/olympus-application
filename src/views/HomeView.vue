@@ -1,10 +1,10 @@
 <template>
+  <ListItems />
+  Hello
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
+import { ref } from 'vue'
+import ListItems from '../components/ListItems.vue'
 
-export default {
-  name: 'HomeView',
-}
 </script>
