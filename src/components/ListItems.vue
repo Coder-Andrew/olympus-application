@@ -2,7 +2,6 @@
     <div class="items">
         <div class="item" v-for="item in items" :key="item.id">
             <h2>{{ item.name }}</h2>
-            <p>Item Id: {{ item.id }}</p>
             <p>{{ item.description }}</p>
             <button @click="handleEdit(item)">Edit</button>
             <button @click="handleDelete(item.id)">Delete</button>

@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import CrudView from '@/views/CrudView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
 
 const routes = [
   {
@@ -7,6 +9,16 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  {
+    path: '/CRUD',
+    name: 'CRUD',
+    component: CrudView
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: NotFoundView
+  }
 ]
 
 const router = createRouter({
